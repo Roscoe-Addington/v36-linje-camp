@@ -28,8 +28,8 @@
   grid-template-columns: repeat(5, 1fr);
 }
 
-.tabla {
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
+  .tabla {
     grid-template-columns: 1fr;
   }
 }
