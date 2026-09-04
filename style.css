@@ -1,6 +1,11 @@
 .tabla {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
 }
 .avgång {
-  margin-left: 20px;
+  border: 1px solid rgb(149, 118, 118);
+  padding: 1rem;
+  background-color: rgb(205, 23, 151);
+  color: white;
 }
