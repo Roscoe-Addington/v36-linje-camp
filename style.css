@@ -1,6 +1,6 @@
 .tabla {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
 .avgång {
@@ -8,4 +8,35 @@
   padding: 1rem;
   background-color: rgb(205, 23, 151);
   color: white;
+}
+.avgång {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 1 1 200px;
+  padding: 0.5rem;
+  border: 1px solid;
+}
+.footer {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(110, 92, 202);
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.tabla {
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+.nav {
+  display: flex;
+  gap: 1rem;
+  background-color: rgb(205, 23, 151);
+  padding: 1rem;
+  border: 0.5rem solid;
 }
